@@ -1,16 +1,26 @@
 {
-  "name": "static-site",
+  "name": "readme-generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "# Unit 09 Node.js and ES6+ Homework: Good README Generator",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Jolie Guerra",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.19.2",
     "dotenv": "^8.0.0",
-    "inquirer": "^6.3.1"
-  }
+    "fs": "0.0.1-security",
+    "inquirer": "^6.5.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jguerra21/readme-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jguerra21/readme-generator/issues"
+  },
+  "homepage": "https://github.com/jguerra21/readme-generator#readme"
 }

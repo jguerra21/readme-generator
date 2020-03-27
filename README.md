@@ -30,3 +30,6 @@ Once all the prompts have been answered a README.md file will be created. Below 
 ![](./images/Image-2.jpeg)
 ![](./images/Image-3.jpeg)
 ![](./images/Image-4.jpeg)
+
+## See GIF in action
+![](./images/giphy.gif)

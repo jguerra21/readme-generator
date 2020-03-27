@@ -1,10 +1,8 @@
 const generateMarkdown = {
   generateMarkdown(
     user = '',
-    badge = '',
     title = '',
     description = '',
-    tableContents = '',
     installation = '',
     usage = '',
     license = '',
@@ -12,33 +10,36 @@ const generateMarkdown = {
     test = '',
     questions = ''
   ) {
-    console.log('generateMarkdown');
     return `
 # ${title}
 ## Description
 ${description}
-## Badges
-${badge}
 ## Table of contents
-${tableContents}
+- [Installation](#Installation)
+- [Usage](#usage)
+- [License](#License)
+- [Contributing](#Contributing)
+- [Test](#Test)
+- [Questions](#Questions)
+
 ## Installation
 ${installation}
 ## Usage
 ${usage}
 ## License
-${license}
+![License: MIT](https://img.shields.io/badge/License-${license}-blue.svg)
 ## Contributing
 ${contributing}
 ## Test
 ${test}
 ## Questions
 ${questions}
-## User info
+
 ![](${user.profilePic})
 
 Name: ${user.name}
 
-Email: ${user.email}
+Email: N/A
 
 
 `;

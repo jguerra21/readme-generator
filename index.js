@@ -1,20 +1,13 @@
-
 const inquirer = require('inquirer');
 var api = require('./utils/api');
 
 function init() {
-
   inquirer
     .prompt([
       {
-      type: 'input',
+        type: 'input',
         message: 'What is your Github username?',
         name: 'username'
-      },
-      {
-        type: 'input',
-        message: 'Do you have a github badge in mind?',
-        name: 'badge'
       },
       {
         type: 'input',
@@ -28,11 +21,6 @@ function init() {
       },
       {
         type: 'input',
-        message: 'Do you have any table of contents?',
-        name: 'tableContents'
-      },
-      {
-        type: 'input',
         message: 'Please share app installation information?',
         name: 'installation'
       },
@@ -42,9 +30,10 @@ function init() {
         name: 'usage'
       },
       {
-        type: 'input',
+        type: 'list',
         message: 'Do you have the license information?',
-        name: 'license'
+        name: 'license',
+        choices: ["Apache", "BSD", "MIT"]
       },
       {
         type: 'input',
@@ -64,10 +53,8 @@ function init() {
     ])
     .then(function({
       username,
-      badge,
       title,
       description,
-      tableContents,
       installation,
       usage,
       license,
@@ -77,10 +64,8 @@ function init() {
     }) {
       api.createReadmeFile(
         username,
-        badge,
         title,
         description,
-        tableContents,
         installation,
         usage,
         license,

@@ -3,11 +3,10 @@ const fs = require('fs');
 const mdGen = require('./generateMarkdown');
 
 function writeToFile(fileName, data) {
-  console.log('wtf');
 
   fs.writeFile(fileName, data, function(err) {
     if (err) throw err;
-    console.log('Saved!');
+    console.log('File sucessfully created!');
   });
 }
 
@@ -48,8 +47,6 @@ const api = {
         test,
         questions
       );
-
-      console.log(user, 'before wtf');
       writeToFile('README-Generated.md', data);
     });
   }

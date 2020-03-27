@@ -8,7 +8,7 @@ In order to use the app you can run:
 node index.js
 ```
 
-the user will be prompted with a serious of prompts about themselves and the project like their GitHub username, which will be used to make a call to the GitHub API to retrieve their email and profile image. They will then be prompted with questions about their project.
+The user will be prompted with a serious of prompts about themselves and the project like their GitHub username, which will be used to make a call to the GitHub API to retrieve their email and profile image. They will then be prompted with questions about their project.
 
 The README will be populated with the following:
 
